@@ -13,10 +13,11 @@ jwt = JWTManager(app)
 
 def get_db():
     return mysql.connector.connect(
-        host='localhost',
+        host='tramway.proxy.rlwy.net',
+        port=46060,
         user='root',
-        password='0199',  # ← what is written here?
-        database='taskmanager'
+        password='AUmwfnhxljAMNZYZkDucUxXCkMxrOCeq',
+        database='railway'
     )
 
 # ── REGISTER ──
